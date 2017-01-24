@@ -1,0 +1,9 @@
+applications:
+- name: deployment-tracker-java-guinea-pig
+  path: target/DeploymentTrackerJavaGuineaPig-0.1.0.war
+  memory: 512M
+  instances: 2
+  host: deployment-tracker-node-guinea-pig-${random-word}
+  domain: mybluemix.net
+  random-route: true
+  disk_quota: 512M
